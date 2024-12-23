@@ -5,7 +5,6 @@ const preview_href = ref(false)
 </script>
 
 <template>
-  <div id="background"></div>
   <img id="head" src="https://q1.qlogo.cn/g?b=qq&nk=2207739460&src_uin=www.jlwz.cn&s=0" alt="head">
   <press text="Welcome to jeanhua's page!"></press>
   <div class="contact">
@@ -38,15 +37,6 @@ const preview_href = ref(false)
 </template>
 
 <style scoped>
-#background{
-  background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
-  position: absolute;
-  left: 0;
-  top:0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
 #head{
   width: 100px;
   height: 100px;
