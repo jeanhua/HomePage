@@ -11,7 +11,7 @@ const preview_href = ref(false)
     <a href="https://github.com/jeanhua">
       <img src="../assets/icons/github-fill.svg" alt="github">
     </a>
-    <a href="https://blog.jeanhua.cn">
+    <a href="https://www.blog.jeanhua.cn">
       <img src="../assets/icons/blog.svg" alt="blog">
     </a>
     <a href="#" v-on:click="preview_href=!preview_href">
@@ -26,7 +26,7 @@ const preview_href = ref(false)
   </div>
   <br>
   <div class="preview" v-if="preview_href">
-    <iframe width=330 height=450 src="//music.163.com/outchain/player?type=0&id=9570454473&auto=1&height=430"></iframe>
+    <iframe width=330 height=450 src="https://music.163.com/outchain/player?type=0&id=9570454473&auto=1&height=430"></iframe>
   </div>
   <div class="saying" v-if="!preview_href">
     <h2>追风赶月莫停留，平芜尽处是春山</h2>
