@@ -4,11 +4,11 @@ let images = ["https://www.gallery.jeanhua.cn/d/天翼网盘客户端/相册/jea
 </script>
 <template>
   <h1>jeanhua's gallery</h1>
+  <router-link to="/">
   <div id="return">
-    <router-link to="/">
       <img src="../assets/icons/return.svg" alt="return">
-    </router-link>
   </div>
+  </router-link>
   <br>
   <div class="gallery">
     <img v-for="image in images" :src="image" alt="gallery image" class="gallery-image">
