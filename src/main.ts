@@ -9,10 +9,8 @@ const routes = [
     { path: '/', component: Home },
     { path: '/image', component: Image },
 ]
-
 const router = createRouter({
     history: createMemoryHistory(),
     routes,
 })
-
 createApp(App).use(router).mount('#app')
