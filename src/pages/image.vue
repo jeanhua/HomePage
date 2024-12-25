@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import {onMounted} from "vue";
-let images:any = null
+import {onMounted, ref} from "vue";
+const images = ref()
 onMounted(async () => {
   let response = await fetch('./image.json')
-  images = await response.json()
+  images.value = await response.json()
 })
 
 </script>
