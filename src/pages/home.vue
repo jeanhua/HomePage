@@ -32,7 +32,7 @@ const preview_href = ref(false)
     <h2>追风赶月莫停留，平芜尽处是春山</h2>
   </div>
   <div id="foot">
-    <span>Copyright ©2024 by jeanhua. All rights reserved.</span>
+    <span>Vue3 & vite & typescript<br>Copyright ©2024 by jeanhua. All rights reserved.</span>
   </div>
 </template>
 
