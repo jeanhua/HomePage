@@ -5,7 +5,6 @@ onMounted(async () => {
   let response = await fetch('./image.json')
   images.value = await response.json()
 })
-
 </script>
 <template>
   <h1>jeanhua's gallery</h1>
