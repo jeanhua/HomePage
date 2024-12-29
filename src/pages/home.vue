@@ -23,6 +23,9 @@ const preview_href = ref(false)
     <RouterLink to="/image">
       <img src="../assets/icons/image.svg" alt="image">
     </RouterLink>
+    <a href="https://www.res.jeanhua.cn/">
+      <img src="../assets/icons/scu.svg" alt="scu">
+    </a>
   </div>
   <br>
   <div class="preview" v-if="preview_href">
