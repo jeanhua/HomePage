@@ -4,7 +4,6 @@ import {onMounted, ref} from "vue";
 const props = defineProps({text:String})
 const typingText = ref('');
 const typingSpeed = 100;
-const bunerline = ref("normal")
 const typeWriter = (text: string) => {
   let index = 0;
   const intervalId = setInterval(() => {
@@ -24,11 +23,11 @@ onMounted(() => {
 </script>
 
 <template>
-  <h1 v-on:mouseenter="bunerline='underline'" v-on:mouseleave="bunerline='normal'">{{typingText}}</h1>
+  <h1>{{typingText}}</h1>
 </template>
 
 <style scoped>
-  h1{
-    text-decoration: v-bind(bunerline);
+  h1:hover{
+    text-decoration: underline;
   }
 </style>

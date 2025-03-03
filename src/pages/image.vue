@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { onMounted, ref } from "vue";
+import { onMounted, ref, type Directive } from "vue";
 
 interface Image {
   id: number;
@@ -10,14 +10,55 @@ interface Image {
 const images = ref<Image[]>([]);
 const activeImage = ref<Image | null>(null);
 
+const vLazyload: Directive = {
+  mounted(el: HTMLImageElement) {
+    const placeholder = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=';
+
+    const realSrc = el.dataset.src;
+    el.src = placeholder;
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting && realSrc) {
+          const img = new Image();
+          img.src = realSrc;
+          img.onload = () => {
+            el.src = realSrc;
+            observer.unobserve(el);
+          };
+          img.onerror = () => {
+            console.error('图片加载失败:', realSrc);
+          };
+        }
+      });
+    }, {
+      rootMargin: '200px',
+      threshold: 0.01,
+    });
+
+    observer.observe(el);
+
+    (el as any)._observer = observer;
+  },
+  unmounted(el) {
+    if (el._observer) {
+      el._observer.disconnect();
+    }
+  }
+};
+
 onMounted(async () => {
-  const response = await fetch('./image.json');
-  const data = await response.json();
-  images.value = data.map((url: string, index: number) => ({
-    id: index,
-    url,
-    title: `作品 ${index + 1}`
-  }));
+  try {
+    const response = await fetch('./image.json');
+    const data = await response.json();
+    images.value = data.map((url: string, index: number) => ({
+      id: index,
+      url,
+      title: `作品 ${index + 1}`
+    }));
+  } catch (error) {
+    console.error('加载图片数据失败:', error);
+  }
 });
 
 const openLightbox = (image: Image) => {
@@ -55,9 +96,10 @@ const closeLightbox = () => {
         >
           <div class="image-container">
             <img
-                :src="image.url"
+                :data-src="image.url"
                 :alt="image.title"
                 class="gallery-image"
+                v-lazyload
                 loading="lazy"
             />
           </div>
