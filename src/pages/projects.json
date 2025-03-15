@@ -5,7 +5,7 @@
     "github": "https://github.com/jeanhua/imarket-backend",
     "demo": "https://imarket.jeanhua.cn/",
     "tags": ["C# 12", "Asp.Net", "MySql", "docker","插件"],
-    "image": "/project-image/imarket.png"
+    "image": "./project-image/imarket.png"
   },
   {
     "name": "imarket-page",
@@ -13,28 +13,28 @@
     "github": "https://github.com/jeanhua/imarket-page",
     "demo": "https://imarket.jeanhua.cn/",
     "tags": ["Vue3", "Vite6", "TypeScript"],
-    "image": "/project-image/imarket_page.png"
+    "image": "./project-image/imarket_page.png"
   },
   {
     "name": "scu-plus",
     "description": "四川大学教务系统实用/美化拓展插件",
     "github": "https://github.com/The-Brotherhood-of-SCU/scu-plus",
     "tags": ["React", "Chrome", "TypeScript"],
-    "image": "/project-image/scu-plus.png"
+    "image": "./project-image/scu-plus.png"
   },
   {
     "name": "JHMG-engine",
     "description": "四川大学大一下学期C++大作业项目，自己写的2d游戏引擎",
     "github": "https://github.com/jeanhua/JHMG-engine",
     "tags": ["C++"],
-    "image": "/project-image/JHMG-Engine.png"
+    "image": "./project-image/JHMG-Engine.png"
   },
   {
     "name": "SCU-CS-Class-Materials",
     "description": "四川大学计算机学院本科课程资料（更新中）",
     "github": "https://github.com/KarryRen/SCU-CS-Class-Materials",
     "tags": ["notebook"],
-    "image": "/project-image/SCU-CS-Class-Materials.png"
+    "image": "./project-image/SCU-CS-Class-Materials.png"
   },
   {
     "name": "alphab",
