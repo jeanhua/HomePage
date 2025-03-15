@@ -44,7 +44,7 @@ const router = useRouter()
     </div>
     <el-button type="primary" round style="margin: 20px" @click="router.push('/detail')">
       <el-icon><Medal /></el-icon>
-      details
+      my projects
     </el-button>
   </div>
 </template>

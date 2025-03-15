@@ -20,7 +20,7 @@ const jumpTo = (url:string)=>window.open(url)
   <div class="projects-container">
     <!-- 标题部分 -->
     <div class="header">
-      <h1>我的参与的开源项目</h1>
+      <h1>我参与的开源项目</h1>
       <p class="subtitle">探索我的技术贡献与实践</p>
     </div>
 
