@@ -1,0 +1,60 @@
+[
+  {
+    "name": "imarket-backend",
+    "description": "iMarket 是一个为校园环境设计的开源在线校园集市后端系统，支持高扩展性和可维护性，具有插件系统，可添加自定义插件进行拓展。",
+    "github": "https://github.com/jeanhua/imarket-backend",
+    "demo": "https://imarket.jeanhua.cn/",
+    "tags": ["C# 12", "Asp.Net", "MySql", "docker","插件"],
+    "image": "/project-image/imarket.png"
+  },
+  {
+    "name": "imarket-page",
+    "description": "iMarket 校园集市前端，适配imarket-backend项目进行全栈整合",
+    "github": "https://github.com/jeanhua/imarket-page",
+    "demo": "https://imarket.jeanhua.cn/",
+    "tags": ["Vue3", "Vite6", "TypeScript"],
+    "image": "/project-image/imarket_page.png"
+  },
+  {
+    "name": "scu-plus",
+    "description": "四川大学教务系统实用/美化拓展插件",
+    "github": "https://github.com/The-Brotherhood-of-SCU/scu-plus",
+    "tags": ["React", "Chrome", "TypeScript"],
+    "image": "/project-image/scu-plus.png"
+  },
+  {
+    "name": "JHMG-engine",
+    "description": "四川大学大一下学期C++大作业项目，自己写的2d游戏引擎",
+    "github": "https://github.com/jeanhua/JHMG-engine",
+    "tags": ["C++"],
+    "image": "/project-image/JHMG-Engine.png"
+  },
+  {
+    "name": "SCU-CS-Class-Materials",
+    "description": "四川大学计算机学院本科课程资料（更新中）",
+    "github": "https://github.com/KarryRen/SCU-CS-Class-Materials",
+    "tags": ["notebook"],
+    "image": "/project-image/SCU-CS-Class-Materials.png"
+  },
+  {
+    "name": "alphab",
+    "description": "简洁美观的匿名加密聊天程序，采用RSA+AES进行加密",
+    "github": "https://github.com/jeanhua/alphab-client",
+    "tags": ["Flutter", "dart", "rsa", "aes"],
+    "image": ""
+  },
+  {
+    "name": "Memory",
+    "description": "轻量开源记事本app",
+    "github": "https://github.com/jeanhua/Memory",
+    "tags": ["Flutter", "dart", "sqlite"],
+    "image": ""
+  },
+  {
+    "name": "还有更多",
+    "description": "点击进入我的github主页",
+    "github": "https://github.com/jeanhua",
+    "tags": ["Github"],
+    "image": ""
+  }
+]

@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import press from '../components/press.vue';
 import {ref} from "vue";
+import {ElButton,ElIcon} from "element-plus";
+import {Medal} from "@element-plus/icons-vue";
+import {useRouter} from "vue-router";
 const preview_href = ref(false)
+const router = useRouter()
 </script>
 
 <template>
@@ -25,7 +29,7 @@ const preview_href = ref(false)
         <img src="../assets/icons/image.svg" alt="image">
       </RouterLink>
       <a href="https://www.res.jeanhua.cn/">
-        <img src="../assets/icons/scu.svg" alt="scu">
+        <img src="../assets/icons/shop.svg" alt="image">
       </a>
     </div>
     <br>
@@ -38,6 +42,10 @@ const preview_href = ref(false)
     <div id="foot">
       <span>Vue3 & vite & typescript<br>Copyright ©2024 by jeanhua. All rights reserved.</span>
     </div>
+    <el-button type="primary" round style="margin: 20px" @click="router.push('/detail')">
+      <el-icon><Medal /></el-icon>
+      details
+    </el-button>
   </div>
 </template>
 
