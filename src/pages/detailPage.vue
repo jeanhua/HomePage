@@ -13,6 +13,7 @@ interface Project {
 }
 
 const projectsList = ref<Project[]>(projects)
+const jumpTo = (url:string)=>window.open(url)
 </script>
 
 <template>
@@ -67,17 +68,16 @@ const projectsList = ref<Project[]>(projects)
             <div class="card-footer">
               <el-button
                   type="primary"
-                  :href="project.github"
                   target="_blank"
                   class="github-button"
-              >
+               @click="jumpTo(project.github)">
                 GitHub
               </el-button>
               <el-button
                   v-if="project.demo"
-                  :href="project.demo"
                   target="_blank"
                   class="demo-button"
+                  @click="jumpTo(project.demo)"
               >
                 在线演示
               </el-button>
