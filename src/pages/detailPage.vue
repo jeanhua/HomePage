@@ -21,7 +21,7 @@ const jumpTo = (url:string)=>window.open(url)
     <!-- 标题部分 -->
     <div class="header">
       <h1>我参与的开源项目</h1>
-      <p class="subtitle">探索我的技术贡献与实践</p>
+      <p class="subtitle">我的技术探索与实践</p>
     </div>
 
     <!-- 项目展示 -->
