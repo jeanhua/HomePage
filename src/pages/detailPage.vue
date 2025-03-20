@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-import {ElRow,ElTag,ElCol,ElCard,ElButton} from "element-plus";
+import {ElRow, ElTag, ElCol, ElCard, ElButton, ElIcon} from "element-plus";
 import projects from './projects.json'
+import {useRouter} from "vue-router";
+import {Back} from "@element-plus/icons-vue";
 
 interface Project {
   name: string
@@ -13,6 +15,7 @@ interface Project {
 }
 
 const projectsList = ref<Project[]>(projects)
+const router = useRouter();
 const jumpTo = (url:string)=>window.open(url)
 </script>
 
@@ -21,6 +24,9 @@ const jumpTo = (url:string)=>window.open(url)
     <!-- 标题部分 -->
     <div class="header">
       <h1>我参与的开源项目</h1>
+      <el-button type="primary" @click="router.push('/')" round>
+        <el-icon><Back /></el-icon>
+        返回</el-button>
       <p class="subtitle">我的技术探索与实践</p>
     </div>
 

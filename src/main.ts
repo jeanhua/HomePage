@@ -1,4 +1,4 @@
-import {createRouter, createWebHashHistory} from 'vue-router'
+import {createMemoryHistory, createRouter} from 'vue-router'
 import App from "./App.vue";
 import {createApp} from "vue";
 import 'element-plus/dist/index.css'
@@ -11,7 +11,7 @@ const routes = [
     {path: '/detail',component: ()=>import('./pages/detailPage.vue')}
 ]
 const router = createRouter({
-    history:createWebHashHistory(),
+    history:createMemoryHistory(),
     routes,
 })
 createApp(App).use(router).mount('#app')
