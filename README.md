@@ -1,1 +1,1 @@
-# Vue 3 + TypeScript + Vite
+# VUE3 HomePage with typescript and vite

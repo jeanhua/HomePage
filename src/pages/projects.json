@@ -44,6 +44,13 @@
     "image": "./project-image/alphab.png"
   },
   {
+    "name": "HttpShot",
+    "description": "http并发检测工具",
+    "github": "https://github.com/jeanhua/HttpShot",
+    "tags": ["go", "http"],
+    "image": "./project-image/HttpShot.png"
+  },
+  {
     "name": "Memory",
     "description": "轻量开源记事本app",
     "github": "https://github.com/jeanhua/Memory",
