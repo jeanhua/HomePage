@@ -3,6 +3,7 @@ import App from "./App.vue";
 import {createApp} from "vue";
 import 'element-plus/dist/index.css'
 import "./style.css"
+import "animate.css"
 import Home from './pages/home.vue';
 
 const routes = [
