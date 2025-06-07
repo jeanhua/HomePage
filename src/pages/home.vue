@@ -91,7 +91,6 @@ const router = useRouter()
 
 .contact img:hover {
   transition-property: width, height;
-  animation: bounce 1.5s infinite;
 }
 
 .preview {
