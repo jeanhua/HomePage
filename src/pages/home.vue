@@ -19,7 +19,7 @@ const router = useRouter()
           <img alt="github" src="../assets/icons/github-fill.svg">
         </a>
       </el-tooltip>
-      <el-tooltip content="jeanhua's blog">
+      <el-tooltip content="我的博客">
         <a href="https://www.blog.jeanhua.cn">
           <img alt="blog" src="../assets/icons/blog.svg">
         </a>
@@ -39,9 +39,9 @@ const router = useRouter()
           <img alt="image" src="../assets/icons/image.svg">
         </RouterLink>
       </el-tooltip>
-      <el-tooltip content="jeanhua的资源小站">
-        <a href="https://www.res.jeanhua.cn/">
-          <img alt="res" src="../assets/icons/shop.svg">
+      <el-tooltip content="我的备忘录">
+        <a href="https://memos.jeanhua.cn/">
+          <img alt="res" src="../assets/icons/notes.svg">
         </a>
       </el-tooltip>
     </div>
