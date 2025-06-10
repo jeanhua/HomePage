@@ -40,7 +40,7 @@ const router = useRouter()
         </RouterLink>
       </el-tooltip>
       <el-tooltip content="我的备忘录">
-        <a href="https://memos.jeanhua.cn/">
+        <a href="https://memos.jeanhua.cn/u/jeanhua">
           <img alt="res" src="../assets/icons/notes.svg">
         </a>
       </el-tooltip>
